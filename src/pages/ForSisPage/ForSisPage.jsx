@@ -23,7 +23,7 @@ function ForSisPage() {
         <div>
             <MerchHeader/>
             <div className="main-item">
-                <img src="/for_bro.jpg" alt="Item 1" className="main-item-img"/>
+                <img src="/src/assets/images/for_bro.jpg" alt="Item 1" className="main-item-img"/>
                 <div className="additional-text-item">
                     <h3>Additional Text Item</h3>
                     <p>Some description about this item.</p>

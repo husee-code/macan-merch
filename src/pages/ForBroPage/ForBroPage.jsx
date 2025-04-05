@@ -1,6 +1,11 @@
 import React from 'react';
 import MerchHeader from "../../widgets/MerchHeader/MerchHeader.jsx";
 import "./ForBroPage.css"
+import Image0 from '@/assets/images/for_bro.jpg'
+import Image1 from '@/assets/images/m1_1.png'
+import Image2 from '@/assets/images/m2.png'
+import Image3 from '@/assets/images/m3.png'
+import Image4 from '@/assets/images/m4.webp'
 
 
 function PhotoItem({ src, header, description, objectPosition}) {
@@ -20,7 +25,7 @@ function ForSisPage() {
         <div>
             <MerchHeader/>
             <div className="main-item">
-                <img src="/for_bro.jpg" alt="Item 1" className="main-item-img"/>
+                <img src={Image0} alt="Item 1" className="main-item-img"/>
                 <div className="additional-text-item">
                     <h3>Additional Text Item</h3>
                     <p>Some description about this item.</p>
@@ -32,27 +37,27 @@ function ForSisPage() {
             </div>
             <div className="items-row">
                 <PhotoItem
-                    src="/m1_1.png"
+                    src={Image1}
                     header="T-SHIRT WITH PRINT"
                     description="Cotton 100%"
                     objectPosition="-3rem"
                 />
                 <PhotoItem
-                    src="/m2.png"
+                    src={Image2}
                     header="Hoodie"
                     description="Cotton 100%"
                     objectPosition="-3rem"
 
                 />
                 <PhotoItem
-                    src="/m3.png"
+                    src={Image3}
                     header="Back Print Hoodie"
                     description="Some description about this item."
                     objectPosition="-3rem"
 
                 />
                 <PhotoItem
-                    src="/m4.webp"
+                    src={Image4}
                     header="T-SHIRT XII"
                     description="Some description about this item."
                     objectPosition="-3rem -7rem"

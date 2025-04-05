@@ -30,4 +30,18 @@ export default [
       ],
     },
   },
+  {
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "overrides": [
+      {
+        "files": ["vite.config.js"],
+        "env": {
+          "node": true
+        }
+      }
+    ]
+  }
 ]
