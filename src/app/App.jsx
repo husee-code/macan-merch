@@ -1,0 +1,21 @@
+import { useState } from 'react'
+import './App.css'
+import MainPage from "../pages/MainPage/MainPage.jsx";
+import {CurrentThemeContext} from "../shared/contexts.js";
+import MerchPage from "../pages/MerchPage/MerchPage.jsx";
+import ForBroPage from "../pages/ForBroPage/ForBroPage.jsx";
+
+export default function App() {
+    const [currentPage, setCurrentPage] = useState('ForBroPage');
+
+    return (
+        <CurrentThemeContext.Provider value={{ currentPage, setCurrentPage }}>
+            {currentPage === "MainPage" && <MainPage />}
+            {currentPage === "MerchPage" && <MerchPage />}
+            {currentPage === "ForBroPage" && <ForBroPage />}
+            {currentPage === "ReleasesPage" && <MainPage />}
+            {currentPage === "ContactsPage" && <MainPage />}
+        </CurrentThemeContext.Provider>
+    )
+}
+
