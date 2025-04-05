@@ -6,7 +6,7 @@ import MerchPage from "../pages/MerchPage/MerchPage.jsx";
 import ForBroPage from "../pages/ForBroPage/ForBroPage.jsx";
 
 export default function App() {
-    const [currentPage, setCurrentPage] = useState('ForBroPage');
+    const [currentPage, setCurrentPage] = useState('MainPage');
 
     return (
         <CurrentThemeContext.Provider value={{ currentPage, setCurrentPage }}>
