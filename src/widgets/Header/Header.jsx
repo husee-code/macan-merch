@@ -14,7 +14,7 @@ const Header = () => {
         <header className="header">
             <div className="container">
                 <div className="logo">
-                    LOGO
+                    MACAN
                 </div>
                 <nav className="nav">
                     <ul className="navList">

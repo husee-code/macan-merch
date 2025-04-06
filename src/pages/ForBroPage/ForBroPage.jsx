@@ -20,19 +20,21 @@ function PhotoItem({ src, header, description, objectPosition}) {
     );
 }
 
-function ForSisPage() {
+function ForBroPage() {
     return (
         <div>
             <MerchHeader/>
-            <div className="main-item">
+            <div className="main-item-bro">
                 <img src={Image0} alt="Item 1" className="main-item-img"/>
-                <div className="additional-text-item">
-                    <h3>Additional Text Item</h3>
-                    <p>Some description about this item.</p>
+                <div className="additional-text-item-bro" style={{color: "lightgray"}}>
+                    <p>
+                        {"BRO ".repeat(1000)}
+                    </p>
                 </div>
-                <div className="text-item">
-                    <h3>Main Item</h3>
-                    <p>Some description about this item.</p>
+
+                <div className="text-item-bro">
+                    <h3>For Bro</h3>
+                    <p>High quality merch. For true bros from the hood.</p>
                 </div>
             </div>
             <div className="items-row">
@@ -69,4 +71,4 @@ function ForSisPage() {
     );
 }
 
-export default ForSisPage;
+export default ForBroPage;

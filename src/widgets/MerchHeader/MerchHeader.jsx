@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import './MerchHeader.css';
 import {CurrentThemeContext} from "../../shared/contexts.js";
-
+import mBadgeImage from '@/assets/images/m-series-icon.png'
 
 function IconsRow() {
     return (
@@ -22,7 +22,10 @@ const MerchHeader = () => {
     }
     return (
         <header>
-            <p className="title">MACAN</p>
+            <div className="header-text">
+                <img className="mBadge" src={mBadgeImage} alt="mBadge"/>
+                <span className="title">MACAN</span>
+            </div>
             <IconsRow/>
         </header>
     );

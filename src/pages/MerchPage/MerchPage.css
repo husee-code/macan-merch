@@ -1,3 +1,18 @@
+.light-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    z-index: 100;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.media-container:hover{
+    z-index: 150;
+}
 
 .title {
     font-size: 32px;
@@ -27,16 +42,20 @@
 }
 
 .info-section {
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin-top: 1rem;
 }
 
+
 .info-item {
-    position: relative;
-    overflow: hidden;
+    /*position: relative;*/
+    /*overflow: hidden;*/
 }
+
+
 
 .info-item img {
     width: 384px; /* или любой нужный размер */
@@ -46,6 +65,7 @@
     transition: transform 0.3s ease-in-out;
     overflow: hidden
 }
+
 
 .info-item:hover img {
     transform: scale(1.2); /* Увеличиваем масштаб видео на 10% при наведении */
@@ -83,4 +103,10 @@
     margin-top: 0;
 }
 
+@media (max-width: 800px) {
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
