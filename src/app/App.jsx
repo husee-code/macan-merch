@@ -5,6 +5,7 @@ import MerchPage from "../pages/MerchPage/MerchPage.jsx";
 import ForBroPage from "../pages/ForBroPage/ForBroPage.jsx";
 import LifeStylePage from "../pages/LifeStylePage/LifeStylePage.jsx";
 import ForSisPage from "@/pages/ForSisPage/ForSisPage.jsx";
+import ReleasesPage from "@/pages/ReleasesPage/ReleasesPage.jsx";
 
 export default function App() {
     return (
@@ -17,8 +18,8 @@ export default function App() {
                 <Route path="/ForSisPage" element={<ForSisPage />} />
                 <Route path="/LifeStylePage" element={<LifeStylePage />} />
 
-                <Route path="/releases" element={<MainPage />} />
-                <Route path="/contacts" element={<MainPage />} />
+                <Route path="/ReleasesPage" element={<ReleasesPage />} />
+                <Route path="/ContactsPage" element={<MainPage />} />
             </Routes>
         </Router>
     );

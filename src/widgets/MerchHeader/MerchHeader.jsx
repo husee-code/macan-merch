@@ -22,11 +22,16 @@ const MerchHeader = () => {
     }
     return (
         <header>
-            <div className="header-text" onClick={() => handleChangePage("MainPage")}>
-                <img className="mBadge" src={mBadgeImage} alt="mBadge"/>
-                <span className="title">MACAN</span>
+            <div className='merch-header-container'>
+                <div className="header-text" onClick={() => handleChangePage("MainPage")}>
+                    <img className="mBadge" src={mBadgeImage} alt="mBadge"/>
+                    <span className="title">MACAN</span>
+                </div>
+                <div className='icons-row-container'>
+                    <IconsRow/>
+                </div>
             </div>
-            <IconsRow/>
+
         </header>
     );
 };

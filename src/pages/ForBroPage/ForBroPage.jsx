@@ -22,52 +22,55 @@ function PhotoItem({ src, header, description, objectPosition}) {
 
 function ForBroPage() {
     return (
-        <div>
+        <>
             <MerchHeader/>
-            <div className="main-item-bro">
-                <img src={Image0} alt="Item 1" className="main-item-img"/>
-                <div className="additional-text-item-bro" style={{color: "lightgray"}}>
-                    <p>
-                        {"BRO ".repeat(1000)}
-                    </p>
+            <div style={{paddingTop: '6rem'}}>
+                <div className="main-item-bro">
+                    <img src={Image0} alt="Item 1" className="main-item-img"/>
+                    <div className="additional-text-item-bro" style={{color: "lightgray"}}>
+                        <p>
+                            {"BRO ".repeat(1000)}
+                        </p>
+                    </div>
+
+                    <div className="text-item-bro">
+                        <h3>For Bro</h3>
+                        <p>High quality merch. For true bros from the hood.</p>
+                    </div>
                 </div>
+                <div className="items-row">
+                    <PhotoItem
+                        src={Image1}
+                        header="T-SHIRT WITH PRINT"
+                        description="Cotton 100%"
+                        objectPosition="-3rem"
+                    />
+                    <PhotoItem
+                        src={Image2}
+                        header="Hoodie"
+                        description="Cotton 100%"
+                        objectPosition="-3rem"
 
-                <div className="text-item-bro">
-                    <h3>For Bro</h3>
-                    <p>High quality merch. For true bros from the hood.</p>
+                    />
+                    <PhotoItem
+                        src={Image3}
+                        header="Back Print Hoodie"
+                        description="Some description about this item."
+                        objectPosition="-3rem"
+
+                    />
+                    <PhotoItem
+                        src={Image4}
+                        header="T-SHIRT XII"
+                        description="Some description about this item."
+                        objectPosition="-3rem -7rem"
+
+                    />
                 </div>
+                <div style={{height: '500px'}}></div>
             </div>
-            <div className="items-row">
-                <PhotoItem
-                    src={Image1}
-                    header="T-SHIRT WITH PRINT"
-                    description="Cotton 100%"
-                    objectPosition="-3rem"
-                />
-                <PhotoItem
-                    src={Image2}
-                    header="Hoodie"
-                    description="Cotton 100%"
-                    objectPosition="-3rem"
 
-                />
-                <PhotoItem
-                    src={Image3}
-                    header="Back Print Hoodie"
-                    description="Some description about this item."
-                    objectPosition="-3rem"
-
-                />
-                <PhotoItem
-                    src={Image4}
-                    header="T-SHIRT XII"
-                    description="Some description about this item."
-                    objectPosition="-3rem -7rem"
-
-                />
-            </div>
-            <div style={{height: '500px'}}></div>
-        </div>
+        </>
     );
 }
 

@@ -21,9 +21,10 @@ function PhotoItem({ src, header, description, objectPosition}) {
 }
 
 function ForSisPage() {
-    return (
-        <div>
-            <MerchHeader/>
+    return (<>
+        <MerchHeader/>
+
+        <div style={{paddingTop: '6rem'}}>
             <div className="main-item">
                 <img src={Image0} alt="Item 1" className="main-item-img"/>
                 <div className="additional-text-item" style={{color: "lightgray"}}>
@@ -67,7 +68,7 @@ function ForSisPage() {
             </div>
             <div style={{height: '500px'}}></div>
         </div>
-    );
+    </>);
 }
 
 export default ForSisPage;

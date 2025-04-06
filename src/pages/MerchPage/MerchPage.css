@@ -1,3 +1,7 @@
+.merchPage {
+    padding-top: 6rem
+}
+
 .light-wrapper {
     position: fixed;
     top: 0;
@@ -18,27 +22,6 @@
     font-size: 32px;
     color: lightgray;
     text-align: center;
-}
-
-.iconsRow {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    position: absolute;
-    right: 2rem; /* Регулируй этот параметр по желанию */
-}
-
-.iconsRow i {
-    color: lightgray;
-    font-size: 20px;
-    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
-    cursor: pointer;
-}
-
-.iconsRow i:hover {
-    transform: scale(1.2);
-    color: white;
-    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
 }
 
 .info-section {

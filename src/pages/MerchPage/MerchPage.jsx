@@ -104,12 +104,12 @@ function InfoSection() {
 }
 
 function MerchPage() {
-    return (
+    return (<>
+        <MerchHeader/>
         <div className="merchPage">
-            <MerchHeader/>
             <InfoSection/>
         </div>
-    );
+    </> );
 }
 
 export default MerchPage;

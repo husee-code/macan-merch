@@ -1,0 +1,207 @@
+import MerchHeader from "@/widgets/MerchHeader/MerchHeader.jsx";
+import React from "react";
+import track1 from "@/assets/images/track1.jpg";
+import track2 from "@/assets/images/track2.jpg";
+import track3 from "@/assets/images/track3.jpg";
+import track4 from "@/assets/images/track4.jpg";
+import track5 from "@/assets/images/track5.jpg";
+import track6 from "@/assets/images/track6.jpg";
+import track7 from "@/assets/images/track7.jpg";
+import track8 from "@/assets/images/track8.jpg";
+import track9 from "@/assets/images/track9.jpg";
+import track10 from "@/assets/images/track10.jpg";
+import track11 from "@/assets/images/track11.jpg";
+import track12 from "@/assets/images/track12.jpg";
+import track13 from "@/assets/images/track13.jpg";
+import track14 from "@/assets/images/track14.jpg";
+
+import rzt from "@/assets/images/rzt.svg"
+import appleLogo from "@/assets/images/apple-music.png"
+import spotifyLogo from "@/assets/images/spotify.png"
+import yamusicLogo from "@/assets/images/yamusic.png"
+
+import './ReleasesPage.css';
+
+function ReleasesPage() {
+    const items = [
+        { img: track1, caption: 'MACAN, Kiliana — Спокойной ночи' },
+        { img: track2, caption: 'MACAN, Jakone — 2002' },
+        { img: track3, caption: 'MACAN, Элджей  - По Домам' },
+        { img: track4, caption: 'Jakone, Kiliana, MACAN - Жара' },
+        { img: track5, caption: 'Гио Пика, Словетский, MACAN - Звонил тебе' },
+        { img: track6, caption: 'MACAN - I AM' },
+        { img: track7, caption: 'MACAN - БРАТ' },
+        { img: track8, caption: 'Navai, MACAN - Где-то в глубине сердца' },
+        { img: track9, caption: 'MACAN , The Limba - maybe' },
+        { img: track10, caption: 'A.V.G, MACAN - Спой' },
+        { img: track11, caption: 'MACAN - Юг' },
+        { img: track12, caption: 'Big Baby Tape, MACAN - 4 Da Game' },
+        { img: track13, caption: 'MACAN - Май' },
+        { img: track14, caption: 'MACAN, Jakone - Поспешили' },
+    ];
+    return (<>
+        <MerchHeader/>
+        <div className="releasesPage">
+
+            {/*<div className="gallery-container">*/}
+            {/*    <div className='gallery-item'>*/}
+            {/*        <p style={{*/}
+            {/*            fontSize: '64px'*/}
+            {/*        }}>Latest album</p>*/}
+            {/*        <img src={rzt} alt="Описание" width="100" height="100" style={{*/}
+            {/*            border: 'none',*/}
+            {/*            boxShadow: 'none',*/}
+            {/*            width: '100px',*/}
+            {/*            height: '100px',*/}
+            {/*            objectFit: 'contain'*/}
+            {/*        }}/>*/}
+            {/*    </div>*/}
+            {/*    <div className="gallery-item">*/}
+            {/*    <img src={track6} alt='item-6'/>*/}
+            {/*        <p>MACAN - I AM</p>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+            <div style={{
+                display: 'flex',
+                backgroundColor: '#252525',
+                width: '80%',
+                borderRadius: '12px',
+                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
+                marginBottom: '3rem',
+                overflow: 'hidden',
+                position: 'relative'
+            }}>
+                <img src={track6} alt='item-6' style={{
+                    objectFit: 'cover',
+                    height: '250px',
+                    width: 'auto',
+                    borderRadius: '10px',
+                    margin: '1.5rem'
+                }}/>
+                <div style={{
+                    marginTop: '0.5rem',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between'
+                }}>
+                    <div>
+                        <p style={{color: 'gray'}}>Latest Album</p>
+                        <span style={{color: 'lightgray', fontSize: '32px', fontWeight: 'bold'}}>I AM</span>
+                    </div>
+                    <div style={{marginBottom: '1.5rem'}}>
+                        <div style={{display: 'flex', justifyContent: 'center'}}>
+                            <img src={rzt} alt="Описание" width="100" height="100" style={{
+                                border: 'none',
+                                boxShadow: 'none',
+                                width: '150px',
+                                height: '50px',
+                                objectFit: 'contain',
+                            }}/>
+                        </div>
+                        <div style={{display: 'flex', columnGap: '0.5rem'}}>
+                            <span style={{
+                                backgroundColor: '#202020',
+                                color: 'lightgray',
+                                fontSize: '24px',
+                                fontWeight: 'bold',
+                                width: 'auto',
+                                padding: '0.5rem 1.5rem 0.5rem 1.5rem',
+                                borderRadius: '1rem',
+                            }}>
+                                72
+                            </span>
+                            <span style={{
+                                backgroundColor: '#1969cf',
+                                color: 'lightgray',
+                                fontSize: '24px',
+                                fontWeight: 'bold',
+                                width: 'auto',
+                                padding: '0.5rem 1.5rem 0.5rem 1.5rem',
+                                borderRadius: '1rem',
+                            }}>
+                                74
+                            </span>
+                            <span style={{
+                                backgroundColor: '#202020',
+                                border: '3px solid #1969cf',
+                                boxSizing: 'border-box',
+                                color: 'lightgray',
+                                fontSize: '24px',
+                                fontWeight: 'bold',
+                                width: 'auto',
+                                padding: '0.5rem 1.5rem 0.5rem 1.5rem',
+                                borderRadius: '1rem',
+                            }}>
+                                62
+                            </span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div
+                    className='link-img'
+                    style={{
+                        width: '280px', height: '280px', position: 'absolute',
+                        right: '-7rem',
+                        top: '-3rem',
+                    }}
+                    onClick={()=>window.open("https://music.apple.com/ru/artist/macan/1657206517", "_blank")}
+                >
+                    <img src={appleLogo} alt='item-6' style={{
+                        objectFit: 'cover',
+                        height: '280px',
+                        width: 'auto',
+                        transform: 'rotate(-45deg)'
+                    }}/>
+                </div>
+                <div
+                    className='link-img'
+                    style={{
+                        width: '280px', height: '280px', position: 'absolute',
+                        right: '4rem',
+                        top: '2rem',
+                    }}
+                     onClick={()=>window.open("https://open.spotify.com/artist/5VKufGMVAZ6fs111xYNKnU?b=", "_blank")}
+                >
+                    <img src={spotifyLogo} alt='item-6' style={{
+                        objectFit: 'cover',
+                        height: '280px',
+                        width: 'auto',
+                        transform: 'rotate(-45deg)'
+                    }}/>
+                </div>
+                <div
+                    className='link-img'
+                    style={{
+                        width: '280px', height: '280px', position: 'absolute',
+                        right: '10rem',
+                        top: '7rem',
+                    }}
+                    onClick={()=>window.open("https://music.yandex.ru/artist/3892062", "_blank")}
+                >
+                    <img src={yamusicLogo} alt='item-6' style={{
+                        objectFit: 'cover',
+                        height: '280px',
+                        width: 'auto',
+                        transform: 'rotate(-45deg)',
+                    }}/>
+                </div>
+
+            </div>
+
+            <p className="releases-page-title">RECENT RELEASES</p>
+            <div className="gallery-container">
+                {items.map((item, index) => (
+                    <div className="gallery-item" key={index}>
+                        <img src={item.img} alt={`item-${index}`}/>
+                        <p>{item.caption}</p>
+                    </div>
+                ))}
+            </div>
+
+        </div>
+    </>);
+}
+
+export default ReleasesPage;

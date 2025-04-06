@@ -27,9 +27,9 @@ function PhotoItem({ src, header, description, objectPosition}) {
 }
 
 function LifeStylePage() {
-    return (
-        <div>
-            <MerchHeader/>
+    return (<>
+        <MerchHeader/>
+        <div className='lifestyle-page'>
             <div className="main-item">
                 <div className="main-item-video-wrapper">
                     <video src={vid} type="video/mp4" loop autoPlay muted>
@@ -91,7 +91,7 @@ function LifeStylePage() {
             </div>
             <div style={{height: '500px'}}></div>
         </div>
-    );
+    </>);
 }
 
 export default LifeStylePage;
