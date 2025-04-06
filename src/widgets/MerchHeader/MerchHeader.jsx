@@ -1,6 +1,7 @@
 import React from 'react';
 import './MerchHeader.css';
 import mBadgeImage from '@/assets/images/m-series-icon.png'
+import {useNavigate} from "react-router-dom";
 
 function IconsRow() {
     return (
@@ -15,8 +16,9 @@ function IconsRow() {
 
 
 const MerchHeader = () => {
+    const navigate = useNavigate();
     const handleChangePage = (newPage) => {
-        setCurrentPage(newPage);
+        navigate(`/`);
     }
     return (
         <header>
