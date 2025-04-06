@@ -1,20 +1,19 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import './Header.css';
-import {CurrentThemeContext} from "../../shared/contexts.js";
-
-
-
+import mBadgeImage from "@/assets/images/m-series-icon.png";
+import {useNavigate} from "react-router-dom";
 
 const Header = () => {
-    const { currentPage, setCurrentPage } = useContext(CurrentThemeContext);
+    const navigate = useNavigate();
     const handleChangePage = (newPage) => {
-        setCurrentPage(newPage);
+        navigate(`/${newPage}`);
     }
     return (
         <header className="header">
             <div className="container">
-                <div className="logo">
-                    MACAN
+                <div className="header-text" style={{width: '200px', transform: 'scale(1.5)', marginLeft: '3rem',}}>
+                    <img className="mBadge" src={mBadgeImage} alt="mBadge"/>
+                    <span className="title">MACAN</span>
                 </div>
                 <nav className="nav">
                     <ul className="navList">

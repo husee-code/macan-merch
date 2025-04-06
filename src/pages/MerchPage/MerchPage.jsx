@@ -1,10 +1,10 @@
 import "./MerchPage.css";
 import MerchHeader from "../../widgets/MerchHeader/MerchHeader.jsx";
-import React, {useContext, useState} from "react";
+import React, {useState} from "react";
 import forBroImage from "@/assets/images/for_bro.jpg";
 import forSisImage from "@/assets/images/for_sis.jpg";
 import bratVideo from "@/assets/images/brat.mp4";
-import {CurrentThemeContext} from "@/shared/contexts.js";
+import {useNavigate} from "react-router-dom";
 
 
 function PhotoItem({ src, header, description, onClick, setCurrentItem, objectPosition}) {
@@ -65,9 +65,9 @@ function VideoItem({ src, header, description, onClick, setCurrentItem}) {
 
 function InfoSection() {
     const [currentItem, setCurrentItem] = useState(null);
-    const {currentPage, setCurrentPage} = useContext(CurrentThemeContext);
+    const navigate = useNavigate();
     const handleChangePage = (newPage) => {
-        setCurrentPage(newPage);
+        navigate(`/${newPage}`);
     }
     return (<>
         <div className="light-wrapper"

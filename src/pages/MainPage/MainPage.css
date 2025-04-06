@@ -1,4 +1,5 @@
 .mainPage {
+    overflow: hidden;
     background-image: url('../../assets/main_background2.png'); /* Путь к изображению */
     background-size: cover;
     background-position: center;
@@ -16,4 +17,11 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2rem;
     border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .mainPage {
+        background-image: url('../../assets/mobile_bg.png'); /* Путь к изображению */
+
+    }
 }

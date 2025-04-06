@@ -1,6 +1,5 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import './MerchHeader.css';
-import {CurrentThemeContext} from "../../shared/contexts.js";
 import mBadgeImage from '@/assets/images/m-series-icon.png'
 
 function IconsRow() {
@@ -16,13 +15,12 @@ function IconsRow() {
 
 
 const MerchHeader = () => {
-    const { currentPage, setCurrentPage } = useContext(CurrentThemeContext);
     const handleChangePage = (newPage) => {
         setCurrentPage(newPage);
     }
     return (
         <header>
-            <div className="header-text">
+            <div className="header-text" onClick={() => handleChangePage("MainPage")}>
                 <img className="mBadge" src={mBadgeImage} alt="mBadge"/>
                 <span className="title">MACAN</span>
             </div>
