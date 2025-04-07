@@ -26,7 +26,10 @@ function PhotoItem({ src, header, description, onClick, setCurrentItem, objectPo
             }}
         >
             <div className="media-container">
-                <img src={src} alt="Item 1" style={{objectPosition: objectPosition}}/>
+                <img src={src} alt="Item 1" style={{
+                    objectPosition: objectPosition,
+                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
+                }}/>
             </div>
             <h3>{header}</h3>
             <p>{description}</p>

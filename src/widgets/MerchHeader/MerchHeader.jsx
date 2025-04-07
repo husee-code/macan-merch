@@ -21,7 +21,7 @@ const MerchHeader = () => {
         navigate(`/`);
     }
     return (
-        <header>
+        <header className='merch-header'>
             <div className='merch-header-container'>
                 <div className="header-text" onClick={() => handleChangePage("MainPage")}>
                     <img className="mBadge" src={mBadgeImage} alt="mBadge"/>
